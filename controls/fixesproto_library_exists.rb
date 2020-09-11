@@ -33,6 +33,5 @@ control 'core-plans-fixesproto-library-exists' do
     its('exit_status') { should eq 0 }
     its('stdout') { should_not be_empty }
     its('stdout') { should match /Version:\s+#{plan_pkg_version}/ }
-    its('stderr') { should be_empty }
   end
 end
